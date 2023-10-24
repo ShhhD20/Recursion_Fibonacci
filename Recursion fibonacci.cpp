@@ -5,7 +5,7 @@ unsigned long long int fib (unsigned long long int n, unsigned long long int pre
 	return (n);
 }
 
-void print (int a, int b, unsigned long long int hist, unsigned long long int hist2){
+void print (unsigned long long int a, unsigned long long int b, unsigned long long int hist, unsigned long long int hist2){
 	unsigned long long int res;
 	if(b < a){
 		res = fib(b, hist, hist2);
@@ -19,10 +19,10 @@ void print (int a, int b, unsigned long long int hist, unsigned long long int hi
 }
 
 int main(){
-	int ans;
-	int num = 0;
+	unsigned long long int ans;
+	unsigned long long int num = 0;
 	printf("Numero de elementos de la seria fibonacci: ");
-	scanf("%d", &ans);
+	scanf("%llu", &ans);
 	printf("Elementos de la serie\n");
 	print(ans, num, 0, 0);
 	
